@@ -1,0 +1,9 @@
+#Python Calculator Base version 1.0
+print("Welcome to Python Calculator")
+print(end="\n")
+print("Enter first no.")
+n1=input()
+print("Enter second no")
+n2=input()
+print("The Answer is _")
+print(int(n1)+int(n2))
