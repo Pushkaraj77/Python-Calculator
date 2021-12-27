@@ -1,0 +1,48 @@
+#Python Calculator new version 1.1
+'''
+Log file:26 Jun 2021 (22:44)
+'''
+
+print("Welcome to Python Calculator")
+print(end="\n")
+print("Enter first no.")
+n1 = input()
+print("Enter second no")
+n2 = input()
+print(end="\n")
+print("Select Operation")
+n3 = input()
+
+def operators():
+    if n3 == '+':
+        print(int(n1) + int(n2))
+    elif n3 == '-':
+        print(int(n1) - int(n2))
+    elif n3 == '*':
+        print(int(n1) * int(n2))
+    elif n3 == '/':
+        print(int(n1)/int(n2))
+    else :
+        print("select an operator")
+operators()
+
+def clear():
+    print("Enter first no.")
+    n1 = input()
+    print("Enter second no")
+    n2 = input()
+    print(end="\n")
+    print("Select Operation")
+    n3 = input()
+    return operators()
+
+print("Press Y to do more calculations or press N to exit")
+future = str(input())
+
+while True :
+    if future == 'Y' :
+        clear()
+
+    elif future == 'N' :
+        print("Thank you")
+        break
